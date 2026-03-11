@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainrot to Formal English Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="asterisk">*</span> Brainrot Translator <span class="asterisk">*</span></h1>
+            <p>Convert modern vernacular to exquisite Victorian prose.</p>
+        </header>
+
+        <main>
+            <div class="card input-card">
+                <span class="badge brainrot-badge">Brainrot Input</span>
+                <textarea id="inputText" placeholder="Type your slang here... e.g., 'no cap fr fr'" maxlength="1000"></textarea>
+                
+                <div class="controls">
+                    <button id="randomBtn" class="btn secondary-btn">Random Example</button>
+                    <span id="charCount">0 / 1000</span>
+                </div>
+            </div>
+
+            <div class="action-section">
+                <button id="translateBtn" class="btn primary-btn">Translate to Formal English</button>
+                <div id="errorMsg" class="error-text hidden"></div>
+            </div>
+
+            <div class="card output-card">
+                <span class="badge formal-badge">Formal Output</span>
+                <div id="outputText" class="output-box">Your exquisitely formalized prose shall appear here...</div>
+                <button id="copyBtn" class="btn secondary-btn hidden">Copy to Clipboard</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
